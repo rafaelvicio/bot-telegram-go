@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/rafaelvicio/bot-telegram-go/comandos/github"
-	"github.com/rafaelvicio/bot-telegram-go/meetups"
+	"github.com/rafaelvicio/bot-telegram-go/comandos/meetups"
 	"gopkg.in/telegram-bot-api.v4"
 )
 
