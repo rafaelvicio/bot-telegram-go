@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 
+	"github.com/rafaelvicio/bot-telegram-go/comandos/contato"
 	"github.com/rafaelvicio/bot-telegram-go/comandos/github"
 	"github.com/rafaelvicio/bot-telegram-go/comandos/meetups"
 	"gopkg.in/telegram-bot-api.v4"
@@ -39,6 +40,8 @@ func main() {
 				msg.Text = meetups.GetMeetups()
 			case "github":
 				msg.Text = github.GetGitHub()
+			case "contato":
+				msg.Text = contato.GetContato()
 			}
 			bot.Send(msg)
 		}
